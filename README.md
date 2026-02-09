@@ -1,2 +1,2 @@
-# Webdev_Spring2026_Adv_CSharp
-This is the repository for my Spring 2026 Advanced C Sharp class
+# C_plus_plus_with_Cocos2dx
+This is the repository for my C plus plus project using Cocos-2dx
