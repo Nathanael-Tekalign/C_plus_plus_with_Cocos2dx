@@ -8,8 +8,8 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 # add_subdirectory(external/cocos2d)
 
 # Or, if installed separately, point CMake at it:
-# set(COCOS2D_ROOT "/path/to/cocos2d-x")
-# add_subdirectory(${COCOS2D_ROOT} ${CMAKE_BINARY_DIR}/cocos2d)
+ set(COCOS2D_ROOT "/path/to/cocos2d-x")
+ add_subdirectory(${COCOS2D_ROOT} ${CMAKE_BINARY_DIR}/cocos2d)
 
 add_executable(CocosCppGame
     src/main.cpp
@@ -33,4 +33,5 @@ add_custom_command(TARGET CocosCppGame POST_BUILD
             ${CMAKE_SOURCE_DIR}/assets
             $<TARGET_FILE_DIR:CocosCppGame>/assets
 )
+
 
