@@ -6,6 +6,8 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 # If vendoring cocos2d-x as a submodule under external/cocos2d
 # add_subdirectory(external/cocos2d)
+git submodule add https://github.com/cocos2d/cocos2d-x.git external/cocos2d
+git submodule update --init --recursive
 
 # Or, if installed separately, point CMake at it:
 # set(COCOS2D_ROOT "/path/to/cocos2d-x")
