@@ -5,7 +5,7 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 # If vendoring cocos2d-x as a submodule under external/cocos2d
-#add_subdirectory(external/cocos2d)
+ add_subdirectory(external/cocos2d)
 
 # Or, if installed separately, point CMake at it:
  set(COCOS2D_ROOT "/path/to/cocos2d-x")
@@ -33,6 +33,7 @@ add_custom_command(TARGET CocosCppGame POST_BUILD
             ${CMAKE_SOURCE_DIR}/assets
             $<TARGET_FILE_DIR:CocosCppGame>/assets
 )
+
 
 
 
