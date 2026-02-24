@@ -1,5 +1,0 @@
-# Add the engine as a git submodule (into external/cocos2d)
-git submodule add https://github.com/cocos2d/cocos2d-x.git external/cocos2d
-
-# Pull all of the engine's own submodules (zlib, box2d, etc.)
-git submodule update --init --recursive
