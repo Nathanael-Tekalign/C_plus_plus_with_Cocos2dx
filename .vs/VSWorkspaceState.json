@@ -1,0 +1,22 @@
+{
+  "OutputFoldersPerTargetSystem": {
+    "Local Machine": [
+      "out\\build\\x64-Debug",
+      "out\\install\\x64-Debug"
+    ]
+  },
+  "ExpandedNodes": [
+    "",
+    "\\external",
+    "\\external\\cocos2d",
+    "\\external\\cocos2d\\tools",
+    "\\external\\cocos2d\\tools\\cocos2d-console",
+    "\\external\\cocos2d\\tools\\cocos2d-console\\plugins",
+    "\\external\\cocos2d\\tools\\cocos2d-console\\plugins\\plugin_generate",
+    "\\external\\cocos2d\\tools\\cocos2d-console\\plugins\\plugin_generate\\bin-templates",
+    "\\external\\cocos2d\\tools\\cocos2d-console\\plugins\\plugin_generate\\bin-templates\\cpp-template-default",
+    "\\external\\cocos2d\\tools\\cocos2d-console\\plugins\\plugin_generate\\bin-templates\\cpp-template-default\\proj.win32"
+  ],
+  "SelectedNode": "\\external\\cocos2d\\tools\\cocos2d-console\\plugins\\plugin_generate\\bin-templates\\cpp-template-default\\proj.win32\\HelloCpp.sln",
+  "PreviewInSolutionExplorer": false
+}
