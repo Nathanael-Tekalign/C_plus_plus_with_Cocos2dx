@@ -1,7 +1,7 @@
 #include "AppDelegate.h"
 #include "MainScene.h"
 #include "base/CCDirector.h"
-#include "platform/CCGLViewImpl.h"
+#include "platform/desktop/CCGLViewImpl-desktop.h"
 USING_NS_CC;
 
 AppDelegate::AppDelegate() {}
@@ -16,7 +16,7 @@ bool AppDelegate::applicationDidFinishLaunching() {
     auto director = Director::getInstance();
     auto glview = director->getOpenGLView();
     if (!glview) {
-        glview = GLViewImpl::create("CocosCppGame");
+        glview = GLViewImpl::create("OPTION A TEST");
         director->setOpenGLView(glview);
     }
     director->setAnimationInterval(1.0f / 60);

@@ -10,6 +10,15 @@ set(COCOS2D_ROOT ${CMAKE_CURRENT_SOURCE_DIR}/external/cocos2d)
 set(GAME_SRC_DIR ${CMAKE_CURRENT_SOURCE_DIR}/src)
 set(GAME_ASSETS_DIR ${CMAKE_CURRENT_SOURCE_DIR}/assets)
 
+# Avoid building/linking physics (Chipmunk) while we get the game running
+set(USE_PHYSICS OFF CACHE BOOL "" FORCE)
+
+# Don't build engine tests/tools we don't need
+set(BUILD_TESTS OFF CACHE BOOL "" FORCE)
+set(BUILD_CPP_TESTS OFF CACHE BOOL "" FORCE)
+set(BUILD_LUA_LIBS OFF CACHE BOOL "" FORCE)
+set(BUILD_LUA_TESTS OFF CACHE BOOL "" FORCE)
+
 # --- Add the engine (requires submodules initialized) ---
 add_subdirectory(${COCOS2D_ROOT} ${CMAKE_BINARY_DIR}/cocos2d)
 
